@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 // ✅ ICO শেষ হওয়ার তারিখ এখানে সেট করুন
-const ICO_END_DATE = new Date('2025-12-31T23:59:59Z')
+const ICO_END_DATE = new Date('2026-05-31T23:59:59Z')
 
 function getTimeLeft() {
   const diff = ICO_END_DATE - new Date()
