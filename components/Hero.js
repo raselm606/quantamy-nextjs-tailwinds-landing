@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-gold-500/20 blur-2xl scale-150 animate-pulse" />
             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-gold-500/60 shadow-[0_0_60px_rgba(245,158,11,0.5)] animate-[float_6s_ease-in-out_infinite]">
-              <Image src="/logo.jpeg" alt="Quantumy QBT" fill className="object-cover" priority />
+              <Image src="/logo.jpeg" alt="Quantumy QBT" fill className="object-cover bg-[#021125] p-6" priority />
             </div>
           </div>
         </div>
