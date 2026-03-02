@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 60% 4%;
+    --foreground: 210 40% 90%;
+    --primary: 38 92% 50%;
+    --primary-foreground: 220 60% 4%;
+    --secondary: 217 50% 10%;
+    --secondary-foreground: 210 40% 90%;
+    --muted: 217 40% 12%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 38 80% 45%;
+    --accent-foreground: 220 60% 4%;
+    --border: 38 60% 20%;
+    --input: 217 50% 10%;
+    --ring: 38 92% 50%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-navy-950 text-slate-200;
+    font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* ─── Typography ─── */
+.font-display {
+  font-family: 'Orbitron', monospace;
+}
+.font-body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* ─── Gold gradient text ─── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fde68a 0%, #f59e0b 45%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Gold glow card border ─── */
+.gold-card {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.06), inset 0 0 24px rgba(245, 158, 11, 0.03);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.gold-card:hover {
+  border-color: rgba(245, 158, 11, 0.55);
+  box-shadow: 0 0 36px rgba(245, 158, 11, 0.18), inset 0 0 24px rgba(245, 158, 11, 0.06);
+}
+
+/* ─── Grid pattern background ─── */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(245, 158, 11, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ─── Stars background dots ─── */
+.stars-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 8% 12%, rgba(251,191,36,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 22% 38%, rgba(255,255,255,0.25) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 38% 8%, rgba(251,191,36,0.35) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 55%, rgba(255,255,255,0.2) 0%, transparent 100%),
+    radial-gradient(2px 2px at 70% 18%, rgba(251,191,36,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 82% 72%, rgba(255,255,255,0.3) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 92% 42%, rgba(251,191,36,0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 4% 82%, rgba(255,255,255,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 48% 88%, rgba(251,191,36,0.2) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 28% 62%, rgba(255,255,255,0.35) 0%, transparent 100%),
+    radial-gradient(1px 1px at 65% 30%, rgba(251,191,36,0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 50%, rgba(255,255,255,0.15) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* ─── Section divider ─── */
+.section-divider {
+  background: linear-gradient(90deg, transparent, rgba(245,158,11,0.4), transparent);
+  height: 1px;
+  width: 100%;
+}
+
+/* ─── Shimmer text ─── */
+.shimmer-text {
+  background: linear-gradient(90deg, #f59e0b 0%, #fde68a 40%, #f59e0b 60%, #d97706 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #020B18; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f59e0b, #d97706);
+  border-radius: 4px;
+}
