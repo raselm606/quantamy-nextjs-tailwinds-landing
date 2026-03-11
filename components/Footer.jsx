@@ -36,7 +36,7 @@ export default function Footer() {
               {quickLinks.map(link => (
                 <a
                   key={link}
-                  href={`#${link.toLowerCase().replace(' ', '-')}`}
+                  href={`/#${link.toLowerCase().replace(' ', '-')}`}
                   className="text-slate-500 hover:text-gold-400 text-sm font-body transition-colors"
                 >
                   {link}

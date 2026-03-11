@@ -6,13 +6,13 @@ import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 
 const stats = [
-  { label: 'Launch Price', value: '$5.00',  unit: 'USD / token'  },
+  { label: 'Launch Price', value: '$1.00',  unit: 'USD / token'  },
   { label: 'Total Supply', value: '20M',    unit: 'QBT tokens'   },
   { label: 'Network',      value: 'BNB',    unit: 'Chain'        },
   { label: 'Availability', value: 'Multi',  unit: 'DEX & Wallets'},
 ]
 
-export default function Hero() {
+export default function Heroo() {
   return (
     <section
       id="home"
@@ -83,7 +83,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-3 mb-10 animate-[fadeInUp_0.9s_ease_both]">
             <Button asChild size="sm" id="buy">
-              <a href="#about">BUY QBT — $5.00 USD</a>
+              <a href="#about">BUY QBT — $1.00 USD</a>
             </Button>
             <Button asChild variant="outline" size="sm">
               <a href="#tokenomics">VIEW TOKENOMICS</a>

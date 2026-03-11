@@ -1,19 +1,18 @@
 "use client"
 
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
-import { Menu, X } from 'lucide-react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Menu, X } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 const navLinks = [
-  { label: 'About',      href: '/#about' },
-  { label: 'Why Us',     href: '/#why-us' },
-  { label: 'Tokenomics', href: '/#tokenomics' },
-  { label: 'Roadmap',    href: '/#roadmap' },
-  { label: 'Team',       href: '/#team' },
-  { label: 'FAQ',        href: '/#faq' },
-  // { label: '📊 Market',  href: '/market' },
+  { label: 'About',      href: '#about' },
+  { label: 'Why Us',     href: '#why-us' },
+  { label: 'Tokenomics', href: '#tokenomics' },
+  { label: 'Roadmap',    href: '#roadmap' },
+  { label: 'Team',       href: '#team' },
+  { label: 'FAQ',        href: '#faq' },
 ]
 
 export default function Navbar() {
@@ -37,7 +36,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand */}
-        <a href="/" className="flex items-center gap-3 group">
+        <a href="#" className="flex items-center gap-3 group">
           <div className="relative w-9 h-9 rounded-full overflow-hidden border border-gold-500/50 shadow-[0_0_12px_rgba(245,158,11,0.3)] group-hover:shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-shadow">
             <Image src="/logo.jpeg" alt="Quantumy" fill className="object-cover" />
           </div>
@@ -58,7 +57,7 @@ export default function Navbar() {
             </a>
           ))}
           <Button asChild size="sm">
-            <a href="#">Buy QBT</a>
+            <a href="#buy">BUY QBT</a>
           </Button>
         </div>
 

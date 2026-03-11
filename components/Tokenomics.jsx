@@ -2,6 +2,8 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardDescription, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 
+import { Button } from '@/components/ui/button'
+
 const variables = [
   { key: 'TP',  label: 'Token Price',         desc: 'Final calculated token price' },
   { key: 'UR',  label: 'USD Received',        desc: 'USD received from trades' },
@@ -91,6 +93,15 @@ export default function Tokenomics() {
             ))}
           </div>
         </Card>
+
+        <div className="flex justify-center flex-wrap mb-10 max-w-xl mx-auto animate-[fadeInUp_0.9s_ease_both]">
+                    <Button asChild size="sm" id="buy">
+                      <a href="/market">Compare QBT — $5.00 USD</a>
+                    </Button>
+                    {/* <Button asChild variant="outline" size="sm">
+                      <a href="#tokenomics">VIEW TOKENOMICS</a>
+                    </Button> */}
+                  </div>
 
         {/* Distribution */}
         <div className="grid md:grid-cols-3 gap-5">
