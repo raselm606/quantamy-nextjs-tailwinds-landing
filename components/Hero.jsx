@@ -4,6 +4,7 @@ import CountdownTimer from '@/components/CountdownTimer'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const stats = [
   { label: 'Launch Price', value: '$1.00',  unit: 'USD / token'  },
@@ -83,7 +84,8 @@ export default function Heroo() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-3 mb-10 animate-[fadeInUp_0.9s_ease_both]">
             <Button asChild size="sm" id="buy">
-              <a href="#about">BUY QBT — $1.00 USD</a>
+               
+              <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x15867ADaf8F756a4031B637c883E1734EFB687D5">BUY QBT — $1.00 USD</Link>
             </Button>
             <Button asChild variant="outline" size="sm">
               <a href="#tokenomics">VIEW TOKENOMICS</a>

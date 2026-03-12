@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 const navLinks = [
@@ -58,7 +59,7 @@ export default function Navbar() {
             </a>
           ))}
           <Button asChild size="sm">
-            <a href="#">Buy QBT</a>
+            <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x15867ADaf8F756a4031B637c883E1734EFB687D5">Buy QBT</Link>
           </Button>
         </div>
 
