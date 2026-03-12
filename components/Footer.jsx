@@ -1,6 +1,8 @@
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import Link from 'next/link'
+import tg from '../public/tg.png'
+import x from '../public/x.png'
 
 const quickLinks = ['About', 'Why Us', 'Tokenomics', 'Roadmap', 'Team', 'FAQ']
 const tokenInfo  = [
@@ -27,8 +29,11 @@ export default function Footer() {
             <p className="text-slate-500 text-sm font-body leading-relaxed mb-4">
               Welcome to the Golden Age of Crypto. Autonomous pricing, full transparency, consumer protection.
             </p>
-            <Link href="">Twitter </Link>
-            <Link href="">Telegram </Link>
+            
+            <div className="flex gap-4">
+              <Link target="_blank" href="https://x.com/Quantumgldnpump"> <Image src={x} alt="Twitter" width={24} height={24} /> </Link>
+            <Link target="_blank" href="https://t.me/QuantumGoldenPump"> <Image src={tg} alt="Telegram" width={24} height={24} /> </Link>
+            </div>
           </div>
 
           {/* Quick Links */}
