@@ -1,5 +1,6 @@
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const quickLinks = ['About', 'Why Us', 'Tokenomics', 'Roadmap', 'Team', 'FAQ']
 const tokenInfo  = [
@@ -26,7 +27,8 @@ export default function Footer() {
             <p className="text-slate-500 text-sm font-body leading-relaxed mb-4">
               Welcome to the Golden Age of Crypto. Autonomous pricing, full transparency, consumer protection.
             </p>
-            <span className="text-slate-600 text-xs font-body">Powered by BNB Chain</span>
+            <Link href="">Twitter </Link>
+            <Link href="">Telegram </Link>
           </div>
 
           {/* Quick Links */}

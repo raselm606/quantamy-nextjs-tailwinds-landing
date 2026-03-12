@@ -88,7 +88,7 @@ export default function Heroo() {
               <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x15867ADaf8F756a4031B637c883E1734EFB687D5">BUY QBT — $1.00 USD</Link>
             </Button>
             <Button asChild variant="outline" size="sm">
-              <a href="#tokenomics">VIEW TOKENOMICS</a>
+              <Link target="_blank" href="/whitepaper.pdf">Whitepaper</Link> 
             </Button>
           </div>
 
