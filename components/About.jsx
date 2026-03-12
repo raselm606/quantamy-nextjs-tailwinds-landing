@@ -1,6 +1,5 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
+import { Card, CardDescription, CardTitle } from '@/components/ui/card'
 
 const features = [
   { icon: '🔍', title: 'Blockchain Data Scan',        desc: 'Real-time scanning of coins minted, listed, and verified. Autonomous pricing through blockchain verification and algorithms every minute.' },
@@ -13,7 +12,7 @@ const features = [
 
 const highlights = [
   { label: 'Powered By',    value: 'BNB Chain'     },
-  { label: 'Opening Price', value: '$5.00 USD'     },
+  { label: 'Opening Price', value: '$1.00 USD'     },
   { label: 'Technology',    value: 'Quantum AI'    },
   { label: 'Model',         value: 'Decentralized' },
 ]

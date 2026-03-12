@@ -4,7 +4,7 @@ import Image from 'next/image'
 const quickLinks = ['About', 'Why Us', 'Tokenomics', 'Roadmap', 'Team', 'FAQ']
 const tokenInfo  = [
   { label: 'Symbol',       value: 'QBT' },
-  { label: 'Launch Price', value: '$5.00 USD' },
+  { label: 'Launch Price', value: '$1.00 USD' },
   { label: 'Total Supply', value: '20,000,000' },
   { label: 'Network',      value: 'BNB Chain' },
   { label: 'Type',         value: 'Utility Token' },
