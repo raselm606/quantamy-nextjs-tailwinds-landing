@@ -21,7 +21,7 @@ const members = [
     role: 'Co-Founder',
     desc: "Owner of UCBI Banking and a multinational presence across UK & France. He now brings that cross-border financial weight to Quantumy, engineering the decentralized backbone and cross-chain systems that make trustless infrastructure ",
     linkd:'https://uk.linkedin.com/in/wadii-el-rachidi/', 
-    img: '/2.jfif'
+    img: '/2.jpeg'
   },
   {
     initials: 'RM',
