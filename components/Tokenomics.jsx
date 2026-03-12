@@ -20,8 +20,8 @@ const variables = [
 
 const keyStats = [
   { label: 'Total Supply',  value: '20,000,000', unit: 'QBT' },
-  { label: 'Launch Price',  value: '$5.00',       unit: 'USD per token' },
-  { label: 'Network',       value: 'BNB',         unit: 'Powered by BNB Chain' },
+  { label: 'Launch Price',  value: '$1.00',       unit: 'USD per token' },
+  { label: 'Network',       value: 'BNB',         unit: 'Powered by BNB Chain', href:'https://bscscan.com/address/0x15867ADaf8F756a4031B637c883E1734EFB687D5' },
   { label: 'Model',         value: 'Quantum',     unit: 'Autonomous Pricing' },
 ]
 
@@ -96,7 +96,9 @@ export default function Tokenomics() {
 
         <div className="flex justify-center flex-wrap mb-10 max-w-xl mx-auto animate-[fadeInUp_0.9s_ease_both]">
                     <Button asChild size="sm" id="buy">
-                      <a href="/market">Compare QBT — $5.00 USD</a>
+                      <a href="https://bscscan.com/address/0x15867ADaf8F756a4031B637c883E1734EFB687D5" target="_blank" rel="noopener noreferrer">
+                        BScScan Contract Link
+                      </a>
                     </Button>
                     {/* <Button asChild variant="outline" size="sm">
                       <a href="#tokenomics">VIEW TOKENOMICS</a>
