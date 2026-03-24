@@ -10,18 +10,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-// ── QBT static data ──
-const QBT_DATA = {
-  id: 'qbt', name: 'Quantum Blockchain Token', symbol: 'QBT',
+// ── QBNT static data ──
+const QBNT_DATA = {
+  id: 'QBNT', name: 'Quantum Blockchain Network Token', symbol: 'QBNT',
   current_price: 5.00, market_cap: 100_000_000, volume_24h: 2_500_000,
   price_change_24h: 0, circulating_supply: 20_000_000, total_supply: 20_000_000,
-  max_supply: 20_000_000, rank: 'N/A', isQBT: true,
+  max_supply: 20_000_000, rank: 'N/A', isQBNT: true,
   onchain: {
     total_supply: 20_000_000, circulating_supply: 20_000_000, max_supply: 20_000_000,
     minted_pct: '100.00', listed_pct: '100.00', liquidity_ratio_pct: '2.50',
     market_cap: 100_000_000, volume_24h: 2_500_000, fully_diluted_val: 100_000_000,
   },
-  qbt_calc: null,
+  QBNT_calc: null,
   exchanges: [
     { key: 'binance',      label: 'Binance',      logo: '🟡', url: 'https://www.binance.com',     available: false, price: null, volume: null },
     { key: 'coinbase',     label: 'Coinbase',      logo: '🔵', url: 'https://www.coinbase.com',    available: false, price: null, volume: null },
@@ -122,10 +122,10 @@ function OnchainPanel({ onchain, symbol }) {
   )
 }
 
-// ── QBT Algorithm Panel ──
-function QBTCalcPanel({ qbt_calc, symbol, current_price }) {
-  if (!qbt_calc || !qbt_calc.inputs) return null
-  const { inputs, formula_price } = qbt_calc
+// ── QBNT Algorithm Panel ──
+function QBNTCalcPanel({ QBNT_calc, symbol, current_price }) {
+  if (!QBNT_calc || !QBNT_calc.inputs) return null
+  const { inputs, formula_price } = QBNT_calc
 
   const diff = formula_price && current_price
     ? ((formula_price - current_price) / current_price * 100)
@@ -137,7 +137,7 @@ function QBTCalcPanel({ qbt_calc, symbol, current_price }) {
     <div className="mt-5">
       <div className="flex items-center gap-2 mb-3">
         <Calculator size={12} className="text-gold-500/60" />
-        <p className="font-display text-slate-500 text-[9px] tracking-widest">QBT ALGORITHM ANALYSIS</p>
+        <p className="font-display text-slate-500 text-[9px] tracking-widest">QBNT ALGORITHM ANALYSIS</p>
       </div>
 
       <div className="rounded-xl border border-gold-500/20 bg-gradient-to-br from-navy-900/60 to-navy-950/60 overflow-hidden">
@@ -169,7 +169,7 @@ function QBTCalcPanel({ qbt_calc, symbol, current_price }) {
               <p className="font-display text-white text-lg font-black">{fmt(current_price)}</p>
             </div>
             <div className="text-right">
-              <p className="font-display text-[8px] tracking-widest text-slate-500 mb-1">QBT FORMULA PRICE</p>
+              <p className="font-display text-[8px] tracking-widest text-slate-500 mb-1">QBNT FORMULA PRICE</p>
               <p className="font-display text-gold-400 text-lg font-black">
                 {formula_price > 0 ? fmt(formula_price, 6) : 'N/A'}
               </p>
@@ -186,13 +186,13 @@ function QBTCalcPanel({ qbt_calc, symbol, current_price }) {
                 {isUndervalued ? '📈 POTENTIALLY UNDERVALUED' : '📉 POTENTIALLY OVERVALUED'}
               </p>
               <p className={`text-[10px] font-body mt-1 ${isUndervalued ? 'text-emerald-400/70' : 'text-red-400/70'}`}>
-                QBT model suggests {Math.abs(diff).toFixed(2)}% {isUndervalued ? 'above' : 'below'} current market price
+                QBNT model suggests {Math.abs(diff).toFixed(2)}% {isUndervalued ? 'above' : 'below'} current market price
               </p>
             </div>
           )}
 
           <p className="text-slate-700 text-[9px] font-body mt-2 text-center">
-            * Indicative only. Based on Quantum Blockchain pricing model.
+            * Indicative only. Based on Quantum Blockchain Network Token pricing model.
           </p>
         </div>
       </div>
@@ -229,14 +229,14 @@ function ExchangeTable({ exchanges, coinSymbol, coinPrice }) {
           <span className="w-8" />
         </div>
 
-        {/* QBT row */}
+        {/* QBNT row */}
         <div className="grid grid-cols-[1fr_auto_auto] gap-2 items-center px-4 py-2.5 bg-gold-500/[0.06] border-b border-gold-500/15">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 rounded-full overflow-hidden border border-gold-500/40 shrink-0">
-              <Image src="/logo.jpeg" alt="QBT" width={20} height={20} className="object-cover" />
+              <Image src="/logo.jpeg" alt="QBNT" width={20} height={20} className="object-cover" />
             </div>
             <div>
-              <p className="text-gold-400 text-[11px] font-semibold font-body">QBT ICO Price</p>
+              <p className="text-gold-400 text-[11px] font-semibold font-body">QBNT ICO Price</p>
               <p className="text-gold-500/50 text-[9px] font-display">LAUNCH</p>
             </div>
           </div>
@@ -323,19 +323,19 @@ function ExchangeTable({ exchanges, coinSymbol, coinPrice }) {
   )
 }
 
-// ── QBT Featured Card ──
-function QBTCard() {
+// ── QBNT Featured Card ──
+function QBNTCard() {
   return (
     <div className="rounded-2xl border border-gold-500/40 bg-gradient-to-br from-navy-800/80 to-navy-900/80 p-6 shadow-[0_0_40px_rgba(245,158,11,0.12)] backdrop-blur-sm">
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gold-500/50 shadow-[0_0_16px_rgba(245,158,11,0.4)] shrink-0">
-            <Image src="/logo.jpeg" alt="QBT" width={48} height={48} className="object-cover" />
+            <Image src="/logo.jpeg" alt="QBNT" width={48} height={48} className="object-cover" />
           </div>
           <div>
-            <h3 className="font-display text-white font-bold text-sm tracking-wide">Quantum Blockchain Token</h3>
+            <h3 className="font-display text-white font-bold text-sm tracking-wide">Quantum Blockchain NetworkToken</h3>
             <div className="flex items-center gap-2 mt-0.5">
-              <Badge variant="active" className="text-[9px] px-2 py-0.5">QBT</Badge>
+              <Badge variant="active" className="text-[9px] px-2 py-0.5">QBNT</Badge>
               <span className="text-slate-600 text-[10px] font-display">BNB CHAIN</span>
             </div>
           </div>
@@ -350,7 +350,7 @@ function QBTCard() {
         </div>
         <div className="grid grid-cols-1 gap-2">
           {[
-            { label: 'TOTAL SUPPLY', value: '20,000,000 QBT' },
+            { label: 'TOTAL SUPPLY', value: '20,000,000 QBNT' },
             { label: 'MARKET CAP',   value: '$100M' },
             { label: 'NETWORK',      value: 'BNB Chain' },
           ].map(item => (
@@ -441,23 +441,23 @@ function CoinDetail({ coin, onClose }) {
         ))}
       </div>
 
-      {/* vs QBT */}
-      {!coin.isQBT && coin.current_price != null && (
+      {/* vs QBNT */}
+      {!coin.isQBNT && coin.current_price != null && (
         <>
           <Separator className="my-4 opacity-30" />
           <div className="rounded-lg bg-navy-950/60 border border-gold-500/20 p-4">
-            <p className="font-display text-gold-500/70 text-[9px] tracking-widest mb-3">VS QBT ($5.00)</p>
+            <p className="font-display text-gold-500/70 text-[9px] tracking-widest mb-3">VS QBNT ($5.00)</p>
             <div className="flex justify-between mb-2">
               <span className="text-slate-400 text-xs">{coin.symbol} price</span>
               <span className="text-white text-xs font-semibold">{fmt(coin.current_price)}</span>
             </div>
             <div className="flex justify-between mb-3">
-              <span className="text-slate-400 text-xs">QBT price</span>
+              <span className="text-slate-400 text-xs">QBNT price</span>
               <span className="text-gold-400 text-xs font-semibold">$5.00</span>
             </div>
             <div className="h-px bg-gold-500/20 mb-3" />
             <div className="flex justify-between">
-              <span className="text-slate-400 text-xs">Ratio ({coin.symbol}/QBT)</span>
+              <span className="text-slate-400 text-xs">Ratio ({coin.symbol}/QBNT)</span>
               <span className="text-gold-400 text-xs font-bold">{(coin.current_price / 5.00).toFixed(4)}x</span>
             </div>
           </div>
@@ -467,8 +467,8 @@ function CoinDetail({ coin, onClose }) {
       {/* On-chain data */}
       <OnchainPanel onchain={coin.onchain} symbol={coin.symbol} />
 
-      {/* QBT Algorithm */}
-      <QBTCalcPanel qbt_calc={coin.qbt_calc} symbol={coin.symbol} current_price={coin.current_price} />
+      {/* QBNT Algorithm */}
+      <QBNTCalcPanel QBNT_calc={coin.QBNT_calc} symbol={coin.symbol} current_price={coin.current_price} />
 
       {/* Exchange comparison */}
       <ExchangeTable exchanges={coin.exchanges} coinSymbol={coin.symbol} coinPrice={coin.current_price} />
@@ -520,7 +520,7 @@ export default function MarketPage() {
   const handleSelectCoin = useCallback(async (coin) => {
     setShowDropdown(false)
     setQuery('')
-    if (coin.isQBT) { setSelectedCoin(QBT_DATA); setCoinDetail(QBT_DATA); return }
+    if (coin.isQBNT) { setSelectedCoin(QBNT_DATA); setCoinDetail(QBNT_DATA); return }
     setSelectedCoin(coin)
     setDetailLoading(true)
     try {
@@ -558,7 +558,7 @@ export default function MarketPage() {
               </h1>
             </div>
             <p className="text-slate-500 text-sm font-body ml-4">
-              Live prices • Exchange comparison • On-chain data • QBT algorithm analysis
+              Live prices • Exchange comparison • On-chain data • QBNT algorithm analysis
             </p>
           </div>
           <button onClick={fetchTopCoins} className="flex items-center gap-2 text-slate-500 hover:text-gold-400 text-xs font-display tracking-wider transition-colors self-start md:self-auto">
@@ -608,12 +608,12 @@ export default function MarketPage() {
 
           <div className="flex items-center gap-2 mt-3 flex-wrap">
             <span className="text-slate-600 text-[10px] font-display tracking-wider">QUICK:</span>
-            <button onClick={() => handleSelectCoin(QBT_DATA)}
+            <button onClick={() => handleSelectCoin(QBNT_DATA)}
               className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-[10px] font-display tracking-wider hover:bg-gold-500/20 transition-colors">
               <div className="w-3.5 h-3.5 rounded-full overflow-hidden">
-                <Image src="/logo.jpeg" alt="QBT" width={14} height={14} className="object-cover" />
+                <Image src="/logo.jpeg" alt="QBNT" width={14} height={14} className="object-cover" />
               </div>
-              QBT
+              QBNT
             </button>
             {['bitcoin', 'ethereum', 'binancecoin', 'solana'].map(id => {
               const coin = topCoins.find(c => c.id === id)
@@ -634,12 +634,12 @@ export default function MarketPage() {
 
           {/* Left */}
           <div className="flex flex-col gap-6">
-            <QBTCard />
+            <QBNTCard />
             <Card className="overflow-hidden p-0">
               <div className="px-6 py-4 border-b border-gold-500/15 flex items-center justify-between">
                 <div>
                   <h2 className="font-display text-white font-bold text-sm tracking-wide">Top Cryptocurrencies</h2>
-                  <p className="text-slate-600 text-[10px] font-body mt-0.5">Click any coin — see on-chain data, exchange prices & QBT analysis</p>
+                  <p className="text-slate-600 text-[10px] font-body mt-0.5">Click any coin — see on-chain data, exchange prices & QBNT analysis</p>
                 </div>
                 <Badge variant="navy" className="text-[9px]">LIVE</Badge>
               </div>
@@ -696,7 +696,7 @@ export default function MarketPage() {
                       {[
                         { icon: <Layers size={11} />, text: 'Exchange prices — Binance, Coinbase, Crypto.com, Trust Wallet, MetaMask' },
                         { icon: <Database size={11} />, text: 'On-chain data — minted, listed, liquidity, supply' },
-                        { icon: <Calculator size={11} />, text: 'QBT algorithm analysis — undervalued/overvalued signal' },
+                        { icon: <Calculator size={11} />, text: 'QBNT algorithm analysis — undervalued/overvalued signal' },
                       ].map((item, i) => (
                         <div key={i} className="flex items-start gap-2 text-slate-600 text-[11px] font-body">
                           <span className="text-gold-500/50 mt-0.5 shrink-0">{item.icon}</span>
@@ -705,12 +705,12 @@ export default function MarketPage() {
                       ))}
                     </div>
                   </div>
-                  <button onClick={() => handleSelectCoin(QBT_DATA)}
+                  <button onClick={() => handleSelectCoin(QBNT_DATA)}
                     className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gold-500/30 bg-gold-500/10 text-gold-400 text-xs font-display tracking-wider hover:bg-gold-500/20 transition-colors">
                     <div className="w-4 h-4 rounded-full overflow-hidden">
-                      <Image src="/logo.jpeg" alt="QBT" width={16} height={16} className="object-cover" />
+                      <Image src="/logo.jpeg" alt="QBNT" width={16} height={16} className="object-cover" />
                     </div>
-                    VIEW QBT
+                    VIEW QBNT
                   </button>
                 </div>
               </Card>
