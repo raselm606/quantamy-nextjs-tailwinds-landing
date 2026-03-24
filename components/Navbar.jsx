@@ -42,8 +42,8 @@ export default function Navbar() {
           <div className="relative w-9 h-9 rounded-full overflow-hidden border border-gold-500/50 shadow-[0_0_12px_rgba(245,158,11,0.3)] group-hover:shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-shadow">
             <Image src="/logo.jpeg" alt="Quantumy" fill className="object-cover" />
           </div>
-          <span className="font-display text-gold-400 font-bold text-base tracking-wider hidden sm:block">
-            QUANTUMY
+          <span className="font-display-6 text-gold-400 font-bold text-base tracking-wider hidden sm:block">
+            QBNT
           </span>
         </a>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
             </a>
           ))}
           <Button asChild size="sm">
-            <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x15867ADaf8F756a4031B637c883E1734EFB687D5">Buy QBT</Link>
+            <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x81b70f2AeD1b7F10682Fc7D56c93483Afd8a141a">Buy QBNT</Link>
           </Button>
         </div>
 
@@ -87,7 +87,7 @@ export default function Navbar() {
             </a>
           ))}
           <Button asChild className="mt-2">
-            <a href="#buy" onClick={() => setMenuOpen(false)}>BUY QBT</a>
+            <a href="#buy" onClick={() => setMenuOpen(false)}>BUY QBNT</a>
           </Button>
         </div>
       )}

@@ -60,7 +60,7 @@ export default function Heroo() {
               <span className="font-display text-gold-500/70 text-[10px] tracking-[0.5em]">QBT TOKEN</span>
             </div>
             <h1 className="font-display font-black leading-[0.9] tracking-tight">
-              <span className="block text-3xl md:text-5xl xl:text-7xl shimmer-text">QUANTUMY</span>
+              <span className="block text-xl md:text-3xl xl:text-3xl shimmer-text">QUANTUM BLOCKCHAIN <br/> NETWORK TOKEN </span>
                
             </h1>
             <div className="mt-4 flex items-center gap-3">
@@ -76,7 +76,7 @@ export default function Heroo() {
               <span className="text-gold-400 font-semibold">Golden Age of Crypto</span>
             </p>
             <p className="text-sm text-slate-500 font-body font-light max-w-md leading-relaxed">
-              Quantum Blockchain Token — Autonomous pricing, full transparency,
+              Quantum Blockchain Network Token — Autonomous pricing, full transparency,
               and next-generation consumer protection for the decentralized future.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Heroo() {
           <div className="flex flex-wrap gap-3 mb-10 animate-[fadeInUp_0.9s_ease_both]">
             <Button asChild size="sm" id="buy">
                
-              <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x15867ADaf8F756a4031B637c883E1734EFB687D5">BUY QBT — $1.00 USD</Link>
+              <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x81b70f2AeD1b7F10682Fc7D56c93483Afd8a141a">BUY QBNT — $1.00 USD</Link>
             </Button>
             <Button asChild variant="outline" size="sm">
               <Link target="_blank" href="/whitepaper.pdf">Whitepaper</Link> 
