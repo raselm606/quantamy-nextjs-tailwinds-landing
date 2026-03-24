@@ -345,7 +345,7 @@ function QBNTCard() {
       <div className="grid grid-cols-2 gap-4 mb-5">
         <div>
           <p className="text-slate-500 text-[10px] font-display tracking-widest mb-1">LAUNCH PRICE</p>
-          <p className="font-display text-gold-400 text-3xl font-black">$5.00</p>
+          <p className="font-display text-gold-400 text-3xl font-black">$1.00</p>
           <p className="text-slate-600 text-[10px] font-body mt-0.5">USD per token</p>
         </div>
         <div className="grid grid-cols-1 gap-2">
