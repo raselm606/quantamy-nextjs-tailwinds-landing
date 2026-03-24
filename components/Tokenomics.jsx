@@ -19,7 +19,7 @@ const variables = [
 ]
 
 const keyStats = [
-  { label: 'Total Supply',  value: '20,000,000', unit: 'QBT' },
+  { label: 'Total Supply',  value: '20,000,000', unit: 'QBNT' },
   { label: 'Launch Price',  value: '$1.00',       unit: 'USD per token' },
   { label: 'Network',       value: 'BNB',         unit: 'Powered by BNB Chain', href:'https://bscscan.com/address/0x15867ADaf8F756a4031B637c883E1734EFB687D5' },
   { label: 'Model',         value: 'Quantum',     unit: 'Autonomous Pricing' },
