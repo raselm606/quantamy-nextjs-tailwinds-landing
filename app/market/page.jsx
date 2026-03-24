@@ -240,7 +240,7 @@ function ExchangeTable({ exchanges, coinSymbol, coinPrice }) {
               <p className="text-gold-500/50 text-[9px] font-display">LAUNCH</p>
             </div>
           </div>
-          <span className="font-display text-gold-400 text-xs font-bold min-w-[80px] text-right">$5.00</span>
+          <span className="font-display text-gold-400 text-xs font-bold min-w-[80px] text-right">$1.00</span>
           <span className="w-8" />
         </div>
 
