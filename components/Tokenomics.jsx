@@ -8,7 +8,7 @@ const variables = [
   { key: 'TP',  label: 'Token Price',         desc: 'Final calculated token price' },
   { key: 'UR',  label: 'USD Received',        desc: 'USD received from trades' },
   { key: 'D',   label: 'Demand',              desc: 'User activity & transaction volume' },
-  { key: 'S',   label: 'Total Supply',        desc: '20,000,000 QBT (hard cap)' },
+  { key: 'S',   label: 'Total Supply',        desc: '20,000,000 QBNT (hard cap)' },
   { key: 'HR',  label: 'Hash Rate',           desc: 'Network strength & security' },
   { key: 'SC',  label: 'Scarcity',            desc: 'Circulating supply factor' },
   { key: 'MAF', label: 'Market Adj. Factor',  desc: 'Bullish 1.1 / Stable 1.0 / Bearish 0.9' },
