@@ -61,6 +61,9 @@ export default function Navbar() {
           <Button asChild size="sm">
             <Link href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x81b70f2AeD1b7F10682Fc7D56c93483Afd8a141a">Buy QBNT</Link>
           </Button>
+          <Button asChild size="sm">
+            <Link href="/market">Market</Link>
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
