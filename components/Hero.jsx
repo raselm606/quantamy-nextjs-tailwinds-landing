@@ -76,8 +76,7 @@ export default function Heroo() {
               <span className="text-gold-400 font-semibold">Golden Age of Crypto</span>
             </p>
             <p className="text-sm text-slate-500 font-body font-light max-w-md leading-relaxed">
-              Quantum Blockchain Network Token — Autonomous pricing, full transparency,
-              and next-generation consumer protection for the decentralized future.
+              The network is designed to check prices across all exchanges to support blockchain networks on market cap to avoid self reporting discrepancies and ensures pricing is on par throughout all networks.
             </p>
           </div>
 

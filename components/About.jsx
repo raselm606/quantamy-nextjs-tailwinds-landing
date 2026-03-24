@@ -46,9 +46,12 @@ export default function About() {
                 To create a decentralized, user-centric ecosystem that empowers individuals and businesses
                 while ensuring fair, stable, and predictable token pricing through autonomous mechanisms.
               </p>
+              <p className="text-slate-400 font-body leading-relaxed mb-5">
+                Along with calculating a quantum blockchain price through algorithms that have been tested through ai to ensure metrics and calculus is correct to determine the market cap value based on factors that directly influence the price calculated by artificial intelligence.
+              </p>
+
               <p className="text-slate-400 font-body leading-relaxed">
-                We facilitate seamless transactions across multiple blockchains while maintaining trust
-                and security — powered by BNB network.
+                Solving a over trillion dollar liquidity problem because cryptocurrency is ever evolving and growing and as time goes on we learn about these factors that affect cryptocurrency
               </p>
             </div>
             <div className="p-8 md:p-10 bg-navy-900/40 grid grid-cols-2 gap-4 content-center">
