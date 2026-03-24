@@ -73,6 +73,40 @@ export default function Tokenomics() {
                       <a href="#tokenomics">VIEW TOKENOMICS</a>
                     </Button> */}
                   </div>
+        
+        {/* Token Distribution */}
+<div className="mb-10">
+  <h3 className="font-display text-gold-400 text-lg font-bold mb-6 text-center tracking-wide">
+    Token Distribution
+  </h3>
+
+  <div className="flex justify-center">
+    <div className="w-full md:w-1/2 space-y-3">
+      {[
+        { label: 'Liquidity Pool',         amount: '10,000,000', pct: 50,  color: 'bg-emerald-500' },
+        { label: 'Public Sale / ICO',       amount: '5,000,000',  pct: 25,  color: 'bg-blue-500'    },
+        { label: 'Community Dev Fund',      amount: '2,400,000',  pct: 12,  color: 'bg-violet-500'  },
+        { label: 'Reserves',                amount: '1,400,000',  pct: 7,   color: 'bg-amber-500'   },
+        { label: 'Marketing',               amount: '500,000',    pct: 2.5, color: 'bg-orange-500'  },
+        { label: 'Advisors & Partnerships', amount: '500,000',    pct: 2.5, color: 'bg-pink-500'    },
+        { label: 'Development Team',        amount: '200,000',    pct: 1,   color: 'bg-slate-500'   },
+      ].map(item => (
+        <div key={item.label}>
+          <div className="flex justify-between text-xs font-body mb-1">
+            <span className="text-slate-300">{item.label}</span>
+            <span className="text-slate-400">{item.amount} QBNT · {item.pct}%</span>
+          </div>
+          <div className="h-2 rounded-full bg-navy-900/60 overflow-hidden">
+            <div
+              className={`h-full rounded-full ${item.color}`}
+              style={{ width: `${item.pct * 2}%` }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
         {/* Formula card */}
         <Card className="p-8 md:p-10 mb-10">
