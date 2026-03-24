@@ -6,7 +6,7 @@ import x from '../public/x.png'
 
 const quickLinks = ['About', 'Why Us', 'Tokenomics', 'Roadmap', 'Team', 'FAQ']
 const tokenInfo  = [
-  { label: 'Symbol',       value: 'QBT' },
+  { label: 'Symbol',       value: 'QBNT' },
   { label: 'Launch Price', value: '$1.00 USD' },
   { label: 'Total Supply', value: '20,000,000' },
   { label: 'Network',      value: 'BNB Chain' },
@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-700 text-xs font-body text-center md:text-left">
-            © 2026 Quantumy / QBT. All Rights to Intellectual Property Reserved.
+            © 2026 Quantum Blockchain Network Token (QBNT). All Rights to Intellectual Property Reserved.
           </p>
           <p className="text-slate-800 text-xs font-body text-center">
             ⚠️ Investing in cryptocurrency involves risk. Not financial advice.

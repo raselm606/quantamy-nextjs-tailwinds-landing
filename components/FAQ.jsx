@@ -1,11 +1,15 @@
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Badge } from '@/components/ui/badge'
 
 const faqs = [
-  { q: 'What is cryptocurrency?',                          a: 'Cryptocurrency is a digital or virtual form of currency that uses cryptography for security and operates on a technology called blockchain.' },
-  { q: 'How does blockchain technology work?',             a: 'Blockchain is a decentralized ledger that records all transactions across a network of computers. Each transaction is grouped into blocks and linked in chronological order, forming a chain.' },
-  { q: 'What are the different types of cryptocurrencies?', a: 'There are thousands of cryptocurrencies, but some of the most well-known include Bitcoin, Ethereum, Ripple, Litecoin, and Bitcoin Cash, each with unique features and use cases.' },
-  { q: 'How can I buy QBT?',                               a: 'QBT will be available on major DEXs and wallets listed at launch. Cryptocurrencies can generally be purchased through exchanges using traditional currency or other cryptocurrencies after completing account verification.' },
+  { q: 'What is cryptocurrency?',                          
+    a: 'Cryptocurrency is a digital or virtual form of currency that uses cryptography for security and operates on a technology called blockchain.' },
+  { q: 'How does blockchain technology work?',             
+    a: 'Blockchain is a decentralized ledger that records all transactions across a network of computers. Each transaction is grouped into blocks and linked in chronological order, forming a chain.' },
+  { q: 'What are the different types of cryptocurrencies?', 
+    a: 'There are thousands of cryptocurrencies, but some of the most well-known include Bitcoin, Ethereum, Ripple, Litecoin, and Bitcoin Cash, each with unique features and use cases.' },
+  { q: 'How can I buy QBNT?',                               
+    a: 'QBNT will be available on major DEXs and wallets listed at launch. Cryptocurrencies can generally be purchased through exchanges using traditional currency or other cryptocurrencies after completing account verification.' },
   { q: 'Is investing in cryptocurrency safe?',             a: "While cryptocurrencies can offer high returns, they are also subject to high volatility and risk. It's important to conduct thorough research and only invest what you can afford to lose." },
   { q: 'What is a cryptocurrency wallet?',                 a: 'A cryptocurrency wallet is a digital tool that allows users to store, send, and receive cryptocurrencies. Wallets can be hardware-based or software-based and come in various forms including mobile and desktop apps.' },
   { q: 'What is mining in cryptocurrency?',                a: 'Mining is the process of validating transactions on a blockchain and adding them to the public ledger. Miners use powerful computers to solve complex mathematical problems and are rewarded with new coins.' },
@@ -28,7 +32,7 @@ export default function FAQ() {
             <span className="text-gold-gradient">FAQ</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto font-body">
-            Everything you need to know about QBT and cryptocurrency.
+            Everything you need to know about QBNT and cryptocurrency.
           </p>
         </div>
 

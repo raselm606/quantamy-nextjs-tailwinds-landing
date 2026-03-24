@@ -48,7 +48,7 @@ export default function Tokenomics() {
             <span className="text-gold-gradient">Tokenomics</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto font-body">
-            Quantum Blockchain Pricing — the most advanced autonomous pricing model in crypto.
+            Quantum Blockchain Network Token (QBNT) Pricing — the most advanced autonomous pricing model in crypto.
           </p>
         </div>
 
@@ -65,8 +65,8 @@ export default function Tokenomics() {
 
         <div className="flex justify-center flex-wrap mb-10 max-w-xl mx-auto animate-[fadeInUp_0.9s_ease_both]">
                     <Button asChild size="sm" id="buy">
-                      <Link href="https://bscscan.com/token/0x15867ADaf8F756a4031B637c883E1734EFB687D5" target="_blank" rel="noopener noreferrer">
-                        QBT BScScan Explorer
+                      <Link href="https://bscscan.com/token/0x81b70f2AeD1b7F10682Fc7D56c93483Afd8a141a" target="_blank" rel="noopener noreferrer">
+                        QBNT BScScan Explorer
                       </Link>
                     </Button>
                     {/* <Button asChild variant="outline" size="sm">

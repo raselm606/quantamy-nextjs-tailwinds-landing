@@ -28,10 +28,10 @@ export default function About() {
         <div className="text-center mb-16">
           <Badge className="mb-4">ABOUT THE PROJECT</Badge>
           <h2 className="font-display text-4xl md:text-5xl font-black text-white mb-5">
-            What is <span className="text-gold-gradient">QBT?</span>
+            What is <span className="text-gold-gradient">QBNT?</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto font-body leading-relaxed">
-            The Quantum Blockchain Token (QBT) revolutionizes the cryptocurrency ecosystem by providing
+            The Quantum Blockchain Network Token (QBNT) revolutionizes the cryptocurrency ecosystem by providing
             an autonomous pricing model, enhancing transaction security, and integrating seamlessly
             across different blockchain networks — the new standard in data transparency and pricing.
           </p>

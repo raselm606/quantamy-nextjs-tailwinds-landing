@@ -14,7 +14,7 @@ const phases = [
       'Inaccurate reporting identified and companies contacted',
       'Consumer protections compliance letter sent',
       'Smart contract development initiated',
-      'Governance autonomous through QBT Network',
+      'Governance autonomous through QBNT Token holders',
       'Machine Learning integration for pricing algorithms',
     ],
   },
@@ -27,7 +27,7 @@ const phases = [
     items: [
       'Full distribution on market',
       'Listing on major exchanges',
-      'Market entry at $5.00 USD per token',
+      'Market entry at $1.00 USD per token',
       'Liquidity availability on-chain and in wallets',
       'Full transparency and real-time visibility',
       'Consumer protection mechanisms active',

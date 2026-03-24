@@ -10,7 +10,7 @@ const members = [
     name: 'J.G.',
     location: 'Ohio, USA 🇺🇸',
     role: 'Founder & CEO',
-    desc: "As Founder & CEO of Quantumy, he built the autonomous pricing model and blockchain transparency framework from the ground up, The Quantum Pricing Formula that sets a new era for how crypto assets are valued, traded, and trusted",
+    desc: "As Founder & CEO of QBNT, he built the autonomous pricing model and blockchain transparency framework from the ground up, The Quantum Pricing Formula that sets a new era for how crypto assets are valued, traded, and trusted",
     linkd:'https://www.linkedin.com/in/julian-graves/',
     img: '/1.jpg'
   },
@@ -19,7 +19,7 @@ const members = [
     name: 'W.R.',
     location: 'France 🇫🇷',
     role: 'Co-Founder',
-    desc: "Owner of UCBI Banking and a multinational presence across UK & France. He now brings that cross-border financial weight to Quantumy, engineering the decentralized backbone and cross-chain systems that make trustless infrastructure ",
+    desc: "Owner of UCBI Banking and a multinational presence across UK & France. He now brings that cross-border financial weight to QBNT, engineering the decentralized backbone and cross-chain systems that make trustless infrastructure ",
     linkd:'https://uk.linkedin.com/in/wadii-el-rachidi/', 
     img: '/2.jpeg'
   },

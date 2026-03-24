@@ -33,7 +33,7 @@ export default function WhyUs() {
         <div className="text-center mb-16">
           <Badge className="mb-4">ADVANTAGES</Badge>
           <h2 className="font-display text-4xl md:text-5xl font-black text-white mb-5">
-            Why Choose <span className="text-gold-gradient">QBT?</span>
+            Why Choose <span className="text-gold-gradient">QBNT?</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto font-body">
             Consumer protection and transparency is our{' '}
@@ -65,7 +65,7 @@ export default function WhyUs() {
             After integration is where the magic happens ✨
           </p>
           <p className="text-slate-400 font-body max-w-2xl mx-auto text-sm leading-relaxed">
-            This quantum blockchain pricing model is more accurate and effective than traditional methods —
+            This quantum blockchain network token (QBNT) pricing model is more accurate and effective than traditional methods —
             multifactorial, real-time adaptable, and powered by sentiment and liquidity intelligence.
           </p>
         </div>
